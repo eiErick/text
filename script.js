@@ -3,7 +3,7 @@ const saveBtn = document.querySelector("#save-btn");
 const clearBtn = document.querySelector("#clear-btn");
 
 saveBtn.addEventListener("click", () => {
-    save()
+    save();
 });
 
 clearBtn.addEventListener("click", () => {
