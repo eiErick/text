@@ -1,0 +1,74 @@
+:root {
+    font-size: 16px;
+    --primary-color: #3584E4;
+    --primary-color-hover: #72A9EC;
+    --radius: 1rem;
+    --transition: .3s;
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --shadow-color:#ffffff26;
+}
+
+.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --shadow-color:#ffffff26;
+}
+
+.light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --shadow-color:#00000026;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: var(--transition);
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textarea {
+    padding: 1rem;
+    resize: none;
+    border: .5rem solid var(--text-color);
+    border-radius: var(--radius);
+    color: #000000;
+    height: 80vh;
+    width: 80vw;
+    font-size: 1.2em;
+    box-shadow: .1rem .1rem 1rem var(--shadow-color);
+}
+
+.container-btn {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.btns {
+    cursor: pointer;
+    padding: 1rem;
+    width: 8rem;
+    font-size: 1.2em;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: var(--radius);
+    box-shadow: .1rem .1rem 1rem var(--shadow-color);
+}
+
+.btns:hover {
+    background-color: var(--primary-color-hover);
+}
