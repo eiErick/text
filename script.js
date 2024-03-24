@@ -7,7 +7,8 @@ saveBtn.addEventListener("click", () => {
 });
 
 clearBtn.addEventListener("click", () => {
-    textarea.value = "";
+    const confirm = window.confirm('Are you sure you want to delete everything?');
+    if (confirm) textarea.value = "";
 });
 
 function save() {
