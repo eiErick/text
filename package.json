@@ -1,0 +1,34 @@
+{
+  "name": "textcraft",
+  "version": "1.0.0",
+  "description": "A simple text editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "icon": "./build/icon/",
+    "productName": "textcraft",
+    "linux": {
+      "target": [
+        "snap",
+        "AppImage"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eiErick/textcraft.git"
+  },
+  "author": "Érick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eiErick/textcraft/issues"
+  },
+  "homepage": "https://github.com/eiErick/textcraft#readme",
+  "devDependencies": {
+    "electron": "^29.1.5",
+    "electron-builder": "^24.13.3"
+  }
+}
